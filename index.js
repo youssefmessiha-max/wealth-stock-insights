@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
@@ -36,26 +37,11 @@ export default function WealthStockInsights() {
           <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
             <h2 className="text-2xl font-semibold text-blue-900 mb-4">Top Insights – August 13, 2025</h2>
             <ul className="space-y-4 text-gray-800">
-              <li>
-                <h3 className="font-bold">1. Triple Flag Precious Metals (TFPM)</h3>
-                <p>EPS up 118%. Entering new gold breakout zone.</p>
-              </li>
-              <li>
-                <h3 className="font-bold">2. Willdan Group (WLDN)</h3>
-                <p>Up 211% YTD. AI + infrastructure catalyst alignment.</p>
-              </li>
-              <li>
-                <h3 className="font-bold">3. Small Cap Bounce</h3>
-                <p>Macro shift expected post-Fed rate decisions.</p>
-              </li>
-              <li>
-                <h3 className="font-bold">4. Healthcare + Financials</h3>
-                <p>McKesson, Capital One outperforming expectations.</p>
-              </li>
-              <li>
-                <h3 className="font-bold">5. Growth vs Value Core Picks</h3>
-                <p>Netflix, Nvidia, Chevron as cross-sector anchors.</p>
-              </li>
+              <li><h3 className="font-bold">1. Triple Flag Precious Metals (TFPM)</h3><p>EPS up 118%. Entering new gold breakout zone.</p></li>
+              <li><h3 className="font-bold">2. Willdan Group (WLDN)</h3><p>Up 211% YTD. AI + infrastructure catalyst alignment.</p></li>
+              <li><h3 className="font-bold">3. Small Cap Bounce</h3><p>Macro shift expected post-Fed rate decisions.</p></li>
+              <li><h3 className="font-bold">4. Healthcare + Financials</h3><p>McKesson, Capital One outperforming expectations.</p></li>
+              <li><h3 className="font-bold">5. Growth vs Value Core Picks</h3><p>Netflix, Nvidia, Chevron as cross-sector anchors.</p></li>
             </ul>
           </div>
 
@@ -63,19 +49,8 @@ export default function WealthStockInsights() {
             <h2 className="text-2xl font-semibold mb-2 text-blue-800">Subscribe for Daily Briefings</h2>
             <p className="mb-4 text-gray-600">Join investors receiving top insights each morning.</p>
             <div className="flex flex-col md:flex-row justify-center gap-3">
-              <input
-                type="email"
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="border p-2 rounded w-full md:w-64"
-              />
-              <button
-                onClick={handleSubscribe}
-                className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800"
-              >
-                Subscribe
-              </button>
+              <input type="email" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} className="border p-2 rounded w-full md:w-64" />
+              <button onClick={handleSubscribe} className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Subscribe</button>
             </div>
           </div>
         </section>
@@ -111,4 +86,3 @@ export default function WealthStockInsights() {
     </div>
   );
 }
-
